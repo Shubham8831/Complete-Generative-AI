@@ -15,7 +15,7 @@ class Student(BaseModel):
 new_student = {
     "name": "nitish",
     "age": "35", # pydantic can also do implicit type conversion str -> int
-    "cgpa": 11 # this will give error as cgps value is set in range 0-10 by field fn.
+    "cgpa": 6 # this will give error as cgps value is set in range 0-10 by field fn.
 }
 
 student = Student(**new_student)
