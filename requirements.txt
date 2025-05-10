@@ -33,3 +33,6 @@ langchain-ollama
 
 #for pypdf loader
 pypdf
+
+#semantic chunker
+langchain_experimental
