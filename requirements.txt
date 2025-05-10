@@ -30,3 +30,6 @@ grandalf
 
 #ollama
 langchain-ollama
+
+#for pypdf loader
+pypdf
