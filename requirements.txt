@@ -36,3 +36,10 @@ pypdf
 
 #semantic chunker
 langchain_experimental
+
+#vector store
+chromadb
+tiktoken
+
+# jupyter
+ipykernel
