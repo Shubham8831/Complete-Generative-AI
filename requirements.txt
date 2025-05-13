@@ -38,8 +38,16 @@ pypdf
 langchain_experimental
 
 #vector store
+faiss-cpu
 chromadb
 tiktoken
+langchain_chroma
 
 # jupyter
 ipykernel
+
+#RETRIVER
+#wikipedia retriver
+wikipedia
+
+onnxruntime
