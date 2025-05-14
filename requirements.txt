@@ -51,3 +51,6 @@ ipykernel
 wikipedia
 
 onnxruntime
+
+# youtube chat project
+youtube-transcript-api
