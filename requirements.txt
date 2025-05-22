@@ -54,3 +54,7 @@ onnxruntime
 
 # youtube chat project
 youtube-transcript-api
+
+# tools
+pydantic
+duckduckgo-search
