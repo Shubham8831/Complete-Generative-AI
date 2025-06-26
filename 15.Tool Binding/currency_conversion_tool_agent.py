@@ -1,9 +1,13 @@
 # realtime currency conversion tool 
 
-from langchain_openai import ChatOpenAI
+import os
+from langchain_groq import ChatGroq
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 import requests
+from dotenv import load_dotenv
+load_dotenv()
+key = os.getenv("GROQ_API_KEY")
 
 
 # tool create
@@ -34,7 +38,7 @@ print(get_conversion_factor.invoke({'base_currency':'USD','target_currency':'INR
 print(convert.invoke({'base_currency_value':10, 'conversion_rate':85.16}))
 
 # tool binding
-llm = ChatOpenAI()
+llm = ChatGroq(model="llama3-70b-8192", api_key=key)
 llm_with_tools = llm.bind_tools([get_conversion_factor, convert])
 
 messages = [HumanMessage('What is the conversion factor between INR and USD, and based on that can you convert 10 inr to usd')]
@@ -64,4 +68,4 @@ for tool_call in ai_message.tool_calls:
 
 
 
-llm_with_tools.invoke(messages).content
+print(llm_with_tools.invoke(messages).content)

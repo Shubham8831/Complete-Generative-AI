@@ -58,3 +58,14 @@ youtube-transcript-api
 # tools
 pydantic
 duckduckgo-search
+
+
+#langserv
+langchain-groq
+fastapi
+uvicorn
+
+sse_starlette
+
+langserver
+pydantic

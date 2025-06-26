@@ -24,8 +24,9 @@ template = PromptTemplate(
     partial_variables={"format_instruction":parser.get_format_instructions()}
 )
 
-prompt = template.invoke({'topic': 'balck hole'})
+prompt = template.invoke({'topic': 'balck hole'}) # making final string prompt
 # print(prompt)
+
 result = llm.invoke(prompt)
 print(result.content)
 
@@ -35,4 +36,4 @@ final_result = parser.parse(result.content)
 print(final_result)
 
 
-# we  can also use chains to do it
+# we  can also use chains to do it "hehe :)"
